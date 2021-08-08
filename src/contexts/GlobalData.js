@@ -501,7 +501,7 @@ const PAIRS_TO_FETCH = 500
 const TOKENS_TO_FETCH = 500
 
 /**
- * Loop through every pair on uniswap, used for search
+ * Loop through every pair on yapeswap, used for search
  */
 async function getAllPairsOnUniswap() {
   try {
@@ -529,7 +529,7 @@ async function getAllPairsOnUniswap() {
 }
 
 /**
- * Loop through every token on uniswap, used for search
+ * Loop through every token on yapeswap, used for search
  */
 async function getAllTokensOnUniswap() {
   try {
@@ -708,7 +708,7 @@ export function useTopLps() {
             if (results) {
               return results.liquidityPositions
             }
-          } catch (e) {}
+          } catch (e) { }
         })
       )
 
