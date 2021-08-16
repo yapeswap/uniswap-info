@@ -4,13 +4,13 @@ import { Flex } from 'rebass'
 import Link from '../Link'
 
 const links = [
-  { url: 'https://yapeswap.com', text: 'About' },
-  { url: 'https://docs.yapeswap.com/', text: 'Docs' },
-  { url: 'https://github.com/Yapeswap/yapeswap-info', text: 'Code' },
+  { url: 'https://yape.exchange', text: 'About' },
+  { url: 'https://docs.yape.exchange/', text: 'Docs' },
+  { url: 'https://github.com/Yapeswap/yape-info', text: 'Code' },
 ]
 
 const FooterLink = ({ children, ...rest }) => (
-  <Link external color="uniswappink" fontWeight={500} fontSize={12} mr={'8px'} {...rest}>
+  <Link external color="yapeswapRed" fontWeight={500} fontSize={12} mr={'8px'} {...rest}>
     {children}
   </Link>
 )
