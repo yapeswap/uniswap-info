@@ -73,7 +73,6 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   let path = null
 
-  console.log(address)
   if (address?.toLowerCase() === '0x757bc268bd50da88b2d0cf1966652b18e56ca803') {
     path = 'https://ipfs.io/ipfs/QmPjELkdHJc5R3kJ37s7t746DVtmg5tomtKATTFFzrQYwj'
   }
