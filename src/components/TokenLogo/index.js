@@ -71,9 +71,18 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
-  const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
-    address
-  )}/logo.png`
+  let path = null
+
+  if (address?.toLowerCase() === '0x757bc268bd50da88b2d0cf1966652b18e56ca803') {
+    path = 'https://ipfs.io/ipfs/QmPjELkdHJc5R3kJ37s7t746DVtmg5tomtKATTFFzrQYwj'
+  }
+  else {
+    path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(address)}/logo.png`
+
+  }
+  //  const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
+  //    address
+  //  )}/logo.png`
 
   return (
     <Inline>
